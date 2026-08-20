@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Foto Kita Blur</title>
+  <link rel="stylesheet" href="urell.css">
+</head>
+
+<body>
+
+  <div class="app">
+
+    <h1>Foto Kita Blur</h1>
+    <p class="subtitle">Bikin gesture di depan kamera</p>
+
+<div class="camera-box">
+
+    <video id="video" autoplay playsinline></video>
+
+    <canvas id="canvas"></canvas>
+
+    <div id="message"></div>
+
+</div>
+
+    <div class="status">
+      <span id="status">Kamera belum aktif</span>
+    </div>
+
+    <div class="buttons">
+      <button id="startBtn">📷 Mulai</button>
+      <button id="stopBtn">⛔ Stop</button>
+    </div>
+
+    <div class="guide">
+      <div>✌️<span>V Sign</span></div>
+      <div>👍<span>Thumbs Up</span></div>
+      <div>✊<span>Fist</span></div>
+    </div>
+
+  </div>
+
+  <!-- MediaPipe -->
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils/camera_utils.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/control_utils/control_utils.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/drawing_utils/drawing_utils.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/hands/hands.js"></script>
+
+  <script src="claudya.js"></script>
+
+</body>
+</html>
